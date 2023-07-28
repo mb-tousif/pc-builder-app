@@ -11,7 +11,7 @@ export default function NotFoundPage () {
         }, 20000)
     }, [router])
     return (
-        <div className="min-h-70vh p-4 text-center">
+        <div className="min-h-screen p-4 text-center">
             <h1 className="text-3xl p-2">Oops.....</h1>
             <h2 className="text-3xl p-2">That page can not Found</h2>
             <p>Go back to the <Link href="/" className="bg-[#6191b3] p-2 rounded-xl">Home Page</Link></p>
