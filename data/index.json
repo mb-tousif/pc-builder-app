@@ -1,0 +1,312 @@
+[
+    {
+      "Image": "desktop1.jpg",
+      "Product Name": "PowerPro Desktop PC",
+      "Category": "Desktop Computers",
+      "Status": "In Stock",
+      "Price": 899.99,
+      "Description": "Experience ultimate power with the PowerPro Desktop PC, designed for gaming and heavy tasks.",
+      "Key Features": {
+        "Brand": "PowerTech",
+        "Model": "ProGamer X1",
+        "Specification": "High-end gaming desktop",
+        "Port": "USB 3.0, HDMI, DisplayPort",
+        "Type": "Gaming PC",
+        "Resolution": "4K UHD",
+        "Voltage": "120-240V AC"
+      },
+      "Individual Rating": 4.7,
+      "Average Rating": 4.6,
+      "Reviews": [
+        {
+          "User": "Gamer123",
+          "Rating": 5,
+          "Comment": "Excellent performance for gaming!"
+        },
+        {
+          "User": "TechGeek",
+          "Rating": 4,
+          "Comment": "Great desktop, but a bit pricey."
+        }
+      ]
+    },
+    {
+      "Image": "desktop2.jpg",
+      "Product Name": "OfficePro Workstation",
+      "Category": "Desktop Computers",
+      "Status": "In Stock",
+      "Price": 649.99,
+      "Description": "Boost your productivity with the OfficePro Workstation, perfect for business and multitasking.",
+      "Key Features": {
+        "Brand": "TechSolutions",
+        "Model": "OfficeMaster 2000",
+        "Specification": "Business workstation",
+        "Port": "USB 2.0, VGA, DVI",
+        "Type": "Office PC",
+        "Resolution": "Full HD",
+        "Voltage": "110-220V AC"
+      },
+      "Individual Rating": 4.2,
+      "Average Rating": 4.0,
+      "Reviews": [
+        {
+          "User": "OfficeWorker",
+          "Rating": 4,
+          "Comment": "Reliable and efficient for office tasks."
+        },
+        {
+          "User": "BusyBee",
+          "Rating": 4,
+          "Comment": "Gets the job done, but lacks modern ports."
+        }
+      ]
+    },
+    {
+      "Image": "desktop3.jpg",
+      "Product Name": "SlimLine All-in-One",
+      "Category": "Desktop Computers",
+      "Status": "Out of stock",
+      "Price": 799.99,
+      "Description": "Elegant and space-saving, the SlimLine All-in-One is perfect for home and multimedia use.",
+      "Key Features": {
+        "Brand": "SleekDesigns",
+        "Model": "SlimMaster 500",
+        "Specification": "All-in-One desktop",
+        "Port": "USB 3.1, HDMI",
+        "Type": "Multimedia PC",
+        "Resolution": "Full HD",
+        "Voltage": "100-240V AC"
+      },
+      "Individual Rating": 4.5,
+      "Average Rating": 4.3,
+      "Reviews": [
+        {
+          "User": "HomeUser1",
+          "Rating": 5,
+          "Comment": "Beautiful design and great performance!"
+        },
+        {
+          "User": "MediaLover",
+          "Rating": 4,
+          "Comment": "Outstanding display, but could use more USB ports."
+        }
+      ]
+    },
+    {
+      "Image": "desktop4.jpg",
+      "Product Name": "PowerStation Pro",
+      "Category": "Desktop Computers",
+      "Status": "In Stock",
+      "Price": 999.99,
+      "Description": "Unleash your creativity with the PowerStation Pro, designed for graphic design and content creation.",
+      "Key Features": {
+        "Brand": "DesignMasters",
+        "Model": "ProCreator 3000",
+        "Specification": "High-performance workstation",
+        "Port": "USB 3.0, Thunderbolt 3, DisplayPort",
+        "Type": "Workstation PC",
+        "Resolution": "4K UHD",
+        "Voltage": "110-240V AC"
+      },
+      "Individual Rating": 4.9,
+      "Average Rating": 4.8,
+      "Reviews": [
+        {
+          "User": "Designer123",
+          "Rating": 5,
+          "Comment": "Excellent workstation for graphic design!"
+        },
+        {
+          "User": "ContentCreator",
+          "Rating": 5,
+          "Comment": "Handles video editing like a breeze."
+        }
+      ]
+    },
+    {
+      "Image": "desktop5.jpg",
+      "Product Name": "HomeStream Media Center",
+      "Category": "Desktop Computers",
+      "Status": "In Stock",
+      "Price": 499.99,
+      "Description": "Transform your home entertainment with the HomeStream Media Center, perfect for streaming and multimedia.",
+      "Key Features": {
+        "Brand": "StreamTech",
+        "Model": "MediaStreamer 100",
+        "Specification": "Media center PC",
+        "Port": "USB 2.0, HDMI",
+        "Type": "Media PC",
+        "Resolution": "Full HD",
+        "Voltage": "100-240V AC"
+      },
+      "Individual Rating": 4.3,
+      "Average Rating": 4.2,
+      "Reviews": [
+        {
+          "User": "MovieBuff",
+          "Rating": 4,
+          "Comment": "Great for streaming movies and shows."
+        },
+        {
+          "User": "MusicLover",
+          "Rating": 4,
+          "Comment": "Perfect for music playback, but lacks 4K support."
+        }
+      ]
+    },
+    {
+      "Image": "desktop6.jpg",
+      "Product Name": "GamerX Ultimate Beast",
+      "Category": "Desktop Computers",
+      "Status": "In Stock",
+      "Price": 1499.99,
+      "Description": "Conquer the gaming world with the GamerX Ultimate Beast, built for hardcore gamers.",
+      "Key Features": {
+        "Brand": "GamerTech",
+        "Model": "UltimateBeast X9000",
+        "Specification": "High-end gaming desktop",
+        "Port": "USB 3.1, HDMI, DisplayPort",
+        "Type": "Gaming PC",
+        "Resolution": "4K UHD",
+        "Voltage": "120-240V AC"
+      },
+      "Individual Rating": 4.8,
+      "Average Rating": 4.7,
+      "Reviews": [
+        {
+          "User": "GamingNinja",
+          "Rating": 5,
+          "Comment": "This beast crushes every game I throw at it!"
+        },
+        {
+          "User": "ProGamer123",
+          "Rating": 5,
+          "Comment": "Superb performance, worth every penny."
+        }
+      ]
+    },
+    {
+      "Image": "desktop7.jpg",
+      "Product Name": "OfficePlus Workhorse",
+      "Category": "Desktop Computers",
+      "Status": "In Stock",
+      "Price": 799.99,
+      "Description": "Boost your office productivity with the OfficePlus Workhorse, designed for business professionals.",
+      "Key Features": {
+        "Brand": "BusinessTech",
+        "Model": "Workhorse Pro 2020",
+        "Specification": "Business workstation",
+        "Port": "USB 3.0, DisplayPort, VGA",
+        "Type": "Office PC",
+        "Resolution": "Full HD",
+        "Voltage": "110-220V AC"
+      },
+      "Individual Rating": 4.5,
+      "Average Rating": 4.4,
+      "Reviews": [
+        {
+          "User": "OfficeManager",
+          "Rating": 4,
+          "Comment": "Reliable and efficient for daily office tasks."
+        },
+        {
+          "User": "BusinessPro",
+          "Rating": 4,
+          "Comment": "Solid performance, but could use more modern ports."
+        }
+      ]
+    },
+    {
+      "Image": "desktop8.jpg",
+      "Product Name": "AllRounder MultiTasker",
+      "Category": "Desktop Computers",
+      "Status": "Out of stock",
+      "Price": 699.99,
+      "Description": "Versatile and powerful, the AllRounder MultiTasker is perfect for everyday computing.",
+      "Key Features": {
+        "Brand": "TechMasters",
+        "Model": "MultiTasker 500",
+        "Specification": "Everyday desktop",
+        "Port": "USB 2.0, HDMI",
+        "Type": "Home PC",
+        "Resolution": "Full HD",
+        "Voltage": "100-240V AC"
+      },
+      "Individual Rating": 4.2,
+      "Average Rating": 4.1,
+      "Reviews": [
+        {
+          "User": "EverydayUser",
+          "Rating": 4,
+          "Comment": "Gets the job done for everyday tasks."
+        },
+        {
+          "User": "TechEnthusiast",
+          "Rating": 4,
+          "Comment": "Good value for the price, but could be faster."
+        }
+      ]
+    },
+    {
+      "Image": "desktop9.jpg",
+      "Product Name": "DesignPro Creative Studio",
+      "Category": "Desktop Computers",
+      "Status": "In Stock",
+      "Price": 1299.99,
+      "Description": "Unleash your creative potential with the DesignPro Creative Studio, tailor-made for designers and artists.",
+      "Key Features": {
+        "Brand": "CreativeTech",
+        "Model": "DesignStudio 800",
+        "Specification": "High-performance workstation",
+        "Port": "USB 3.1, Thunderbolt 4, DisplayPort",
+        "Type": "Workstation PC",
+        "Resolution": "4K UHD",
+        "Voltage": "110-240V AC"
+      },
+      "Individual Rating": 4.7,
+      "Average Rating": 4.6,
+      "Reviews": [
+        {
+          "User": "GraphicDesigner",
+          "Rating": 5,
+          "Comment": "This workstation enhances my creativity!"
+        },
+        {
+          "User": "ArtLover",
+          "Rating": 5,
+          "Comment": "Perfect for digital art and 3D modeling."
+        }
+      ]
+    },
+    {
+      "Image": "desktop10.jpg",
+      "Product Name": "BudgetFriendly Essentials",
+      "Category": "Desktop Computers",
+      "Status": "In Stock",
+      "Price": 399.99,
+      "Description": "Get your essentials done with the BudgetFriendly Essentials, ideal for basic computing needs.",
+      "Key Features": {
+        "Brand": "EconoTech",
+        "Model": "Essentials 300",
+        "Specification": "Budget desktop",
+        "Port": "USB 2.0, VGA",
+        "Type": "Home PC",
+        "Resolution": "HD",
+        "Voltage": "100-240V AC"
+      },
+      "Individual Rating": 3.8,
+      "Average Rating": 3.7,
+      "Reviews": [
+        {
+          "User": "BasicUser",
+          "Rating": 4,
+          "Comment": "Affordable and suitable for basic tasks."
+        },
+        {
+          "User": "BudgetBuyer",
+          "Rating": 3,
+          "Comment": "Decent budget option, but not for heavy use."
+        }
+      ]
+    }
+  ]

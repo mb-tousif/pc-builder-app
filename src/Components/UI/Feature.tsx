@@ -42,25 +42,25 @@ export default function Feature() {
       ];
       return (
         <section className="text-gray-600 body-font">
-          <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <div className="container px-5 py-4 mx-auto">
+            <div className="p-2 grid grid-cols-1 pb-3 sm:grid-cols-2 md:grid-cols-3 gap-2">
               {featuredCategories?.map((item) => (
                 <Link
                   href={`/categories/${item?.category}`}
                   key={item?.id}
-                  className="p-4 w-1/2 md:w-1/5 lg:w-1/6 sm:mb-0 mb-6 hover:bg-gray-100 duration-300 rounded-lg cursor-pointer"
+                  className="bg-gradient-to-r from-[#3A8678] to-[#ADCDED] hover:from-[#523d03] duration-300 rounded-lg cursor-pointer"
                 >
                   <div>
                     <div className="rounded-lg h-28 overflow-hidden">
                       <Image
                         alt="content"
-                        className="object-cover object-center h-full w-full"
+                        className="object-cover object-center min-h-full w-full"
                         src={item?.image}
-                        width={100}
-                        height={100}
+                        width={600}
+                        height={600}
                       />
                     </div>
-                    <h2 className="text-xl font-medium title-font text-center text-gray-900 mt-5">
+                    <h2 className="text-xl mb-3 font-medium title-font text-center text-gray-50 mt-5">
                       {item?.category}
                     </h2>
                   </div>
