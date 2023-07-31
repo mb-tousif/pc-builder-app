@@ -8,7 +8,7 @@ export default function RAM({ products }: { products: TProducts[] }) {
   return (
     <RootLayout>
       <h1 className="text-2xl sm:text-4xl text-center p-3 sm:font-bold text-gray-50">
-        CPU/Processor Page
+        RAM
       </h1>
       <div className="grid grid-cols-1 p-2 gap-2">
         {products.map((product) => (

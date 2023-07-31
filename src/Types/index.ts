@@ -5,7 +5,7 @@ export enum ECategory {
   MOTHERBOARD = "Motherboard",
   PSU = "Power Supply Unit",
   MONITOR = "Monitor",
-  Others = "Others",
+  Others = "Other",
 }
 
 export type TProducts = {
