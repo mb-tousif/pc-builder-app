@@ -1,5 +1,5 @@
 import RootLayout from "@/Layout/RootLayout";
-import { TProducts } from "@/Types";
+import { ECategory, TProducts } from "@/Types";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -9,7 +9,7 @@ export default function CPUPages({ products }: { products: TProducts[] }) {
     <RootLayout>
       <div className="">
         <h1 className="text-2xl sm:text-4xl text-center p-3 sm:font-bold text-gray-50">
-          CPU/Processor Page
+          CPU/Processor Feature Products
         </h1>
        <div className="grid grid-cols-1 md:grid-cols-2 p-2 gap-2">
        {products.map((product) => (
@@ -44,7 +44,7 @@ export async function getStaticProps() {
       throw new Error("Fetch failed");
     }
     const data: TProducts[] = await res.json();
-    const products = data.filter((product) => product.category === "CPU");
+    const products = data.filter((product) => product.category === ECategory.CPU_Processor);
     return {
       props: {
         products,

@@ -1,5 +1,5 @@
 import RootLayout from "@/Layout/RootLayout";
-import { TProducts } from "@/Types";
+import { ECategory, TProducts } from "@/Types";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -8,7 +8,7 @@ export default function RAM({ products }: { products: TProducts[] }) {
   return (
     <RootLayout>
       <h1 className="text-2xl sm:text-4xl text-center p-3 sm:font-bold text-gray-50">
-        RAM
+        RAM Feature Products
       </h1>
       <div className="grid grid-cols-1 p-2 gap-2">
         {products.map((product) => (
@@ -46,7 +46,7 @@ export async function getStaticProps() {
       throw new Error("Fetch failed");
     }
     const data: TProducts[] = await res.json();
-    const products = data.filter((product) => product.category === "RAM");
+    const products = data.filter((product) => product.category === ECategory.RAM);
     return {
       props: {
         products,
