@@ -1,19 +1,19 @@
-import RootLayout from '@/Layout/RootLayout';
-import { ECategory, TProducts } from '@/Types';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react'
+import RootLayout from "@/Layout/RootLayout";
+import { ECategory, TProducts } from "@/Types";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 export default function OtherPage({ products }: { products: TProducts[] }) {
-    return (
-      <RootLayout>
-        <h1 className="text-2xl sm:text-4xl text-center p-3 sm:font-bold text-gray-50">
-            Others Feature Products
-        </h1>
-        <div className="grid grid-cols-1 p-2 gap-2">
-          {products.map((product) => (
+  return (
+    <RootLayout>
+      <h1 className="text-2xl sm:text-4xl text-center p-3 sm:font-bold text-gray-50">
+        Others Feature Products
+      </h1>
+      <div className="grid grid-cols-1 p-2 gap-2">
+        {products.map((product) => (
+          <div className="mx-auto" key={product._id}>
             <Link
-              key={product._id}
               href={`/product/${product?._id}`}
               className=" mx-auto my-auto"
             >
@@ -33,29 +33,37 @@ export default function OtherPage({ products }: { products: TProducts[] }) {
                 </div>
               </div>
             </Link>
-          ))}
-        </div>
-      </RootLayout>
-    );
-  }
-  
-  export async function getStaticProps() {
-    try {
-      const res = await fetch(`${process.env.REACT_APP_API_URL}/products`);
-      if (!res.ok) {
-        throw new Error("Fetch failed");
-      }
-      const data: TProducts[] = await res.json();
-      const products = data.filter((product) => product.category === ECategory.Others);
-      return {
-        props: {
-          products,
-        },
-      };
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      return {
-        notFound: true,
-      };
+            <div className="flex justify-center p-2">
+              <button className="bg-[#1c475ac8] hover:bg-[#49b3e1dd] text-gray-50 font-bold py-2 px-4 rounded-full">
+                Add to Build
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </RootLayout>
+  );
+}
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/products`);
+    if (!res.ok) {
+      throw new Error("Fetch failed");
     }
+    const data: TProducts[] = await res.json();
+    const products = data.filter(
+      (product) => product.category === ECategory.Others
+    );
+    return {
+      props: {
+        products,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return {
+      notFound: true,
+    };
   }
+}
