@@ -29,6 +29,7 @@ export default function Monitor({ products }: { products: TProducts[] }) {
                   <h5 className="mb-2 text-xl font-medium">{product.name}</h5>
                   <p className="mb-4 text-base">Category: {product.category}</p>
                   <p className="text-lg">Price: {product.Price}</p>
+                  <p className="text-lg text-green-700">{product.Status}</p>
                   <p className="text-base">Rating: {product.rating}</p>
                 </div>
               </div>

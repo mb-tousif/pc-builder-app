@@ -23,6 +23,7 @@ export default function ProductDetails({ product }: { product: TProducts }) {
             <h5 className="mb-2 text-xl font-medium">{product?.name}</h5>
             <p className="text-lg">Brand: {product?.Brand}</p>
             <p className="text-lg">Price: {product?.Price}</p>
+            <p className="text-lg text-green-700">{product.Status}</p>
             <p className="text-base">Category: {product?.category}</p>
             <p className="text-base">Description: {product?.description}</p>
             <p className="text-base">Rating: {product?.rating}</p>

@@ -14,7 +14,7 @@ export type TProducts = {
   images: string;
   category: ECategory;
   Price: string;
-  status: string;
+  Status: string;
   rating: number;
   Brand: string;
   keyFeatures: string[];

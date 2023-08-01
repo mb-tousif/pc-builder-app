@@ -1,10 +1,16 @@
 import RootLayout from "@/Layout/RootLayout";
+import { addProduct } from "@/Redux/app/features/builderSlice";
+import { useAppDispatch } from "@/Redux/hooks";
 import { ECategory, TProducts } from "@/Types";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 export default function CPUPages({ products }: { products: TProducts[] }) {
+  // const dispatch = useAppDispatch();
+  // const handleAddToBuild = (category: string,product: TProducts) => {
+  //   dispatch(addProduct({category,product}));
+  // }
   return (
     <RootLayout>
       <div className="">
@@ -29,6 +35,7 @@ export default function CPUPages({ products }: { products: TProducts[] }) {
                       Category: {product.category}
                     </p>
                     <p className="text-lg">Price: {product.Price}</p>
+                    <p className="text-lg text-green-700">{product.Status}</p>
                     <p className="text-base">Rating: {product.rating}</p>
                   </div>
                 </div>
