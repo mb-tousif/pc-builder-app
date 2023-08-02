@@ -57,7 +57,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="mx-auto relative bg-neutral-700">
+    <div className="mx-auto relative bg-neutral-700">
       <div className="mx-auto flex max-w-7xl items-center justify-between pb-3 ">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
@@ -138,6 +138,6 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
