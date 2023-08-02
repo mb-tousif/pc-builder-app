@@ -23,7 +23,7 @@ export default function Home({products}: {products: TProducts[]}) {
 
 export async function getStaticProps() {
   try {
-    const res = await fetch(`${process.env.REACT_APP_API_URL}/products`);
+    const res = await fetch("https://pc-builder-three.vercel.app/products");
     if (!res.ok) {
       throw new Error("Fetch failed");
     }

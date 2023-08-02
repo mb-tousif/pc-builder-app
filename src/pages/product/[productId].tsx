@@ -42,7 +42,7 @@ export default function ProductDetails({ product }: { product: TProducts }) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch(`${process.env.REACT_APP_API_URL}/products`);
+  const res = await fetch("https://pc-builder-three.vercel.app/products");
   const data = await res.json();
   const paths = data.map((product: TProducts) => ({
     params: { productId: product?._id },
