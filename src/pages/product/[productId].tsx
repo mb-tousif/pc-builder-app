@@ -1,12 +1,10 @@
-import RootLayout from "@/Layout/RootLayout";
 import { TProducts } from "@/Types";
 import Image from "next/image";
 import React from "react";
 
 export default function ProductDetails({ product }: { product: TProducts }) {
   return (
-    <RootLayout>
-      <div className="pb-6">
+    <div className="pb-6">
       <div className="mx-auto text-gray-50 w-10/12 ">
         <h1 className="text-2xl sm:text-4xl text-center p-3 sm:font-bold text-gray-50">
           Product Details
@@ -36,8 +34,7 @@ export default function ProductDetails({ product }: { product: TProducts }) {
           </div>
         </div>
       </div>
-      </div>
-    </RootLayout>
+    </div>
   );
 }
 
@@ -58,14 +55,8 @@ export async function getStaticProps({
   const { productId } = params;
   try {
     const res = await fetch(
-      `${process.env.REACT_APP_API_URL}/products/${productId}`
+      `https://pc-builder-three.vercel.app/products/products/${productId}`
     );
-    if (!res.ok) {
-      console.error(`Error fetching product with ID: ${productId}`);
-      return {
-        notFound: true,
-      };
-    }
     const data = await res.json();
     return {
       props: {

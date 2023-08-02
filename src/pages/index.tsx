@@ -1,11 +1,10 @@
 import Card from "@/Components/UI/Card";
 import Category from "@/Components/UI/Category";
-import RootLayout from "@/Layout/RootLayout";
 import { TProducts }  from "@/Types/index";
 
 export default function Home({products}: {products: TProducts[]}) {
   return (
-    <RootLayout>
+    <>
       <h1 className="text-2xl sm:text-4xl text-center p-3 sm:font-bold text-gray-50">
         Featured Products
       </h1>
@@ -17,7 +16,7 @@ export default function Home({products}: {products: TProducts[]}) {
       }
       </div>
       <Category />
-    </RootLayout>
+    </>
   );
 }
 

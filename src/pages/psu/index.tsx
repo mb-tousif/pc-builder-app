@@ -1,4 +1,3 @@
-import RootLayout from "@/Layout/RootLayout";
 import { ECategory, TProducts } from "@/Types";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +5,7 @@ import React from "react";
 
 export default function PSUnit({ products }: { products: TProducts[] }) {
   return (
-    <RootLayout>
+    <>
       <h1 className="text-2xl sm:text-4xl text-center p-3 sm:font-bold text-gray-50">
         Power Supply Unit Products
       </h1>
@@ -42,7 +41,7 @@ export default function PSUnit({ products }: { products: TProducts[] }) {
           </div>
         ))}
       </div>
-    </RootLayout>
+    </>
   );
 }
 
