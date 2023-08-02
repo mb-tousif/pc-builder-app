@@ -16,7 +16,7 @@ export default function CPUPages({ products }: { products: TProducts[] }) {
       <div className="grid grid-cols-1 md:grid-cols-2 p-2 gap-2">
         {products.map((product) => (
           <div className="" key={product._id}>
-            <Link href={`/product/${product?._id}`}>
+            <Link href={`/category/${product?._id}`}>
               <div className="flex text-gray-50 rounded-lg shadow-xl bg-neutral-700 flex-col md:max-w-xl md:flex-row">
                 <Image
                   className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"

@@ -5,7 +5,7 @@ import { TProducts } from "@/Types";
 
 export default function Feature({ product }: { product: TProducts }) {
   return (
-    <Link href={`/product/${product?._id}`}>
+    <Link href={`/category/${product?._id}`}>
       <div className="flex flex-col text-gray-50 rounded-lg shadow-xl bg-neutral-700 md:max-w-xl md:flex-row">
         <Image
           className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"

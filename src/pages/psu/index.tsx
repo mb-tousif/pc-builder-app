@@ -13,7 +13,7 @@ export default function PSUnit({ products }: { products: TProducts[] }) {
         {products.map((product) => (
           <div className="mx-auto" key={product._id}>
             <Link
-              href={`/product/${product?._id}`}
+              href={`/category/${product?._id}`}
               className=" mx-auto my-auto"
             >
               <div className="flex flex-col text-gray-50 rounded-lg shadow-xl bg-neutral-700 md:max-w-xl md:flex-row">

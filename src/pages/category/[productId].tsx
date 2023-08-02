@@ -38,35 +38,15 @@ export default function ProductDetails({ product }: { product: TProducts }) {
   );
 }
 
-export async function getStaticPaths() {
-  const res = await fetch("https://pc-builder-three.vercel.app/products");
+export const getServerSideProps = async (context: { params: any; }) => {
+  const { params } = context;
+  const res = await fetch(`https://pc-builder-three.vercel.app/products/${params.productId}`);
   const data = await res.json();
-  const paths = data.map((product: TProducts) => ({
-    params: { productId: product?._id },
-  }));
-  return { paths, fallback: false };
-}
+  // console.log(data);
 
-export async function getStaticProps({
-  params,
-}: {
-  params: { productId: string };
-}) {
-  const { productId } = params;
-  try {
-    const res = await fetch(
-      `https://pc-builder-three.vercel.app/products/products/${productId}`
-    );
-    const data = await res.json();
-    return {
-      props: {
-        product: data,
-      },
-    };
-  } catch (error) {
-    console.error("Error fetching product data:", error);
-    return {
-      notFound: true,
-    };
-  }
-}
+  return {
+    props: {
+      product: data,
+    },
+  };
+};
