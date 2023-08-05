@@ -24,13 +24,15 @@ export default function ProductDetails({ product }: { product: TProducts }) {
             <p className="text-lg text-green-700">{product.Status}</p>
             <p className="text-base">Category: {product?.category}</p>
             <p className="text-base">Description: {product?.description}</p>
-            <p className="text-base">Rating: {product?.rating}</p>
+            <button className="text-base bg-slate-500 px-1 rounded-lg">Rating: {product?.rating} out of 5</button>
+            <button className="text-base block mt-2 bg-slate-500 px-1 rounded-lg">Average Rating: {product?.rating} out of 5</button>
             <ol>
               <h1 className="text-lg text-center">Key Features</h1>
               {product.keyFeatures.map((feature, index) => (
                 <li key={index}>* {feature}</li>
               ))}
             </ol>
+            <p className="text-base">Reviews: This {product?.category} is good.</p>
           </div>
         </div>
       </div>
