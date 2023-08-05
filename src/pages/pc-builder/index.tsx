@@ -81,7 +81,8 @@ export default function PcBuilder() {
                 <div className="ml-3 space-y-1 border-r-2 text-center">
                   <div className="text-base font-normal">
                     <p>{category.name}</p>
-                    {buildProducts[category.name] && (<Image className="mx-auto h-20" src={buildProducts[category.name]?.images} alt="Logo" height={50} width={150} />
+                    {buildProducts[category.name] && (
+                    <Image className="mx-auto h-20" src={`${buildProducts[category.name]?.images}`} alt="Logo" width={120} height={30}/>
                     )}
                   </div>
                 </div>
