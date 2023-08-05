@@ -23,9 +23,12 @@ export const builderSlice = createSlice({
         },
         removeProduct: (state, action:PayloadAction<string>) => {
             state.chooseProduct[action.payload] = null;
+        },
+        cleanBuilder: (state) => {
+            state.chooseProduct = {};
         }
     }
 })
 
-export const { addProduct, removeProduct } = builderSlice.actions;
+export const { addProduct, removeProduct, cleanBuilder } = builderSlice.actions;
 export default builderSlice.reducer;

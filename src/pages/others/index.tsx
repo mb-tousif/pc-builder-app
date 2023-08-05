@@ -1,9 +1,19 @@
+import { addProduct } from "@/Redux/app/features/builderSlice";
+import { useAppDispatch } from "@/Redux/hooks";
 import { ECategory, TProducts } from "@/Types";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { useRouter } from "next/router";
+import { toast } from "react-toastify";
 
 export default function OtherPage({ products }: { products: TProducts[] }) {
+  const dispatch = useAppDispatch();
+  const router = useRouter();
+  const handleAddToBuild = (category: string,product: TProducts) => {
+    dispatch(addProduct({category,product}));
+    toast.success("Product added to build");
+    router.push("/pc-builder");
+  }
   return (
     <>
       <h1 className="text-2xl sm:text-4xl text-center p-3 sm:font-bold text-gray-50">
@@ -34,7 +44,7 @@ export default function OtherPage({ products }: { products: TProducts[] }) {
               </div>
             </Link>
             <div className="flex justify-center p-2">
-              <button className="bg-[#1c475ac8] hover:bg-[#49b3e1dd] text-gray-50 font-bold py-2 px-4 rounded-full">
+              <button onClick={()=>handleAddToBuild(product.category, product)} className="bg-[#1c475ac8] hover:bg-[#49b3e1dd] text-gray-50 font-bold py-2 px-4 rounded-full">
                 Add to Build
               </button>
             </div>
